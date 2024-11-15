@@ -1,10 +1,9 @@
 package model;
-
 import java.util.Random;
 
 public class Controladora {
-
-    private String[][] tableroTresEnRaya;
+ 
+private String[][] tableroTresEnRaya;
 
     /**
      * Constructor de la clase Controladora para inicializar
@@ -55,5 +54,9 @@ public class Controladora {
             j = rand.nextInt(3);
         } while (!tableroTresEnRaya[i][j].equals(" "));
         tableroTresEnRaya[i][j] = "X";
+    }
+
+    public String[][] getTableroTresEnRaya() {
+        return tableroTresEnRaya;
     }
 }
